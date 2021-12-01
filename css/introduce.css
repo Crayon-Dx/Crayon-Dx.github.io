@@ -50,8 +50,8 @@ dl {
 .first-tip,
 .second-tip {
     position: absolute;
-    margin-top: 80px;
-    margin-left: -60px;
+    margin-top: -240px;
+    margin-left: -90px;
     width: 5px;
     height: 5px;
     top: 50%;
