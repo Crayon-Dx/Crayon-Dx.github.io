@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/cover.css">
+    <link rel="icon" href="me.ico">
+</head>
+<div class="bg">
+    <div class="introduce">
+        <h1 style="font-size: 50px;">Welcome to FayeW!</h1>
+        <h2>You will start to know me here.</h2>
+        <a href="./introduce.html"><img src="./img/me.png" style="cursor: pointer;"></a>
+        <a href="./introduce.html" style="font-weight: 800; color: rgb(255, 255, 255);">Recognize me.</a>
+    </div>
+    <div class="snow-bg">
+        <div class="snow"></div>
+    </div>
+    <section class="first-bg">
+    </section>
+    <section class="second-bg">
+    </section>
+</div>
+<footer></footer>
+
+<body>
+
+</body>
+<script>
+    var snowBg = document.querySelector('.snow-bg');
+    var arr = [];
+
+    //随机生成雪花区域
+    function creatSown(num) {
+        for (var i = 0; i < num; i++) {
+            var snow = document.createElement('div');
+            snow.className = 'snow';
+            setInterval(() => {
+
+            }, 3000)
+            snow.style.background = 'rgba(255, 255, 255,' + Math.random() + ' )';
+            //随机生成的位置
+            snow.style.top = Math.floor(Math.random() * 50) + '0px';
+            snow.style.left = Math.floor(Math.random() * 130) + '0px';
+            snowBg.appendChild(snow);
+        }
+
+    }
+    //传递想要生生成的数量
+    const num = Math.floor(Math.random(0, 1) * 100);
+    creatSown(num);
+</script>
+
+</html>
