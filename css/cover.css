@@ -43,7 +43,7 @@ body {
 .first-bg {
     position: absolute;
     margin-top: 320px;
-    width: 100%;
+    width: 1349;
     height: 336px;
     background: url(../img/bg1.png) no-repeat;
     animation: first-bg 70s linear infinite;
