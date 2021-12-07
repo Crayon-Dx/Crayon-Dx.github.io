@@ -84,7 +84,8 @@ dl {
 #second-page {
     position: absolute;
     margin-top: 10px;
-    margin-left: 25%;
+    left: 50%;
+    margin-left: -300px;
     font-size: 13px;
     width: 600px;
     height: 720px;
