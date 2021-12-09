@@ -31,6 +31,7 @@
 </body>
 <script>
     let snowBg = document.querySelector('.snow-bg');
+    const fragment = document.createDocumentFragment();
     let arr = [];
 
     //随机生成雪花区域
@@ -45,7 +46,8 @@
             //随机生成的位置
             snow.style.top = Math.floor(Math.random() * 50) + '0px';
             snow.style.left = Math.floor(Math.random() * 130) + '0px';
-            snowBg.appendChild(snow);
+            fragment=appendChild(snow);
+            snowBg.appendChild(fragment);
         }
 
     }
